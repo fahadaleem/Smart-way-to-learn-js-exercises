@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body
+        {
+            font-family: "lato";
+        }
+        .form-container
+        {
+            background-color: tomato;
+            color:white;
+            width: 50%;
+            margin: 0 auto;
+            font-size: 20px;
+            padding: 40px;
+            margin-top: 35px;
+            border-radius: 5px;
+
+        }
+        label
+        {
+            display: block;
+            padding: 10px 0;
+        }
+        input
+        {
+            width: 95%;
+            font-size: 20px;
+            padding: 10px 20px 10px 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #submit-btn
+        {
+            width: 99.5%;
+            padding: 10px 20px 10px 20px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: teal;
+            border: none;
+            color:white;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+
+        #submit-btn:hover
+        {
+            background-color: rgb(20, 187, 187);
+        }
+        #display-data
+        {
+            text-align: center;
+            font-size: 1.7rem;
+            display: none;
+        }
+        .blogpost-img
+        {
+            width: 100%;
+            height: 250px;
+        }
+
+        section div
+        {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        .readmore-btn
+        {
+            margin-top: 20px;
+        }
+
+        table
+        {
+            width: 100%;
+        }
+
+        table, td, th
+        {
+            border:1px solid teal;
+            border-collapse: collapse;
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 5px;
+        }
+
+        #delete-btn, #edit-btn
+        {
+            border: none;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        #delete-btn
+        {
+            background-color: red;
+            color:white;
+        }
+        #edit-btn
+        {
+            background-color: green;
+            color:white;
+        }
+
+        
+    </style>
+
+
+
+</head>
+<body>
+
+
+
+
+    <!-------------Buttons for each Questions--------->
+
+    
+    <!-- 1. Create a signup form and display form data in your web
+page on submission. -->
+
+<h1 style="text-align: center;">Question 1</h1>
+
+<div class="form-container">
+    <form action="">
+       <div>
+           <label for="">First Name</label>
+           <input type="text" placeholder="Enter First Name" id="first_name" class="input-field">
+       </div>
+       <div>
+        <label for="">Last Name</label>
+        <input type="text" placeholder="Enter Last Name" id="last_name" class="input-field">
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input type="text" placeholder="Enter Your Email" id="email" class="input-field">
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter Your Password" id="password" class="input-field">
+    </div>
+    <button type="submit" id="submit-btn">Submit</button>
+</form>
+</div>
+
+
+<div id="display-data">
+    <h1>Your Details</h1>
+    <hr width="40%" >
+    <h2 id="display-name">Your Name: %name%</h2>
+    <h2 id="display-email">Email: %email%</h2>
+    <h2 id="display-password">Password: %password%</h2>
+</div>
+
+
+
+
+
+<!-- 2. Suppose in your webpage there is content area in which
+you have entered your item details, but user can only see
+some details on first look. When user clicks on “Read
+more” button, full detail of that particular item will be
+displayed. -->
+
+<h1 style="text-align: center;">Question 2</h1>
+<section id="blogposts" style="display: flex;margin-top: 20px">
+    <div>
+        <img src="images/img1.jpg" alt="" class="blogpost-img">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quis quae recusandae ratione sunt place <button class="readmore-btn">Read More</button></p>
+    </div>
+    <div>
+        <img src="images/img2.jpg" alt="" class="blogpost-img">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quis quae recusandae ratione sunt place <button class="readmore-btn">Read More</button></p>
+        
+    </div>
+    <div>
+        <img src="images/img3.jpg" class="blogpost-img">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quis quae recusandae ratione sunt place <button class="readmore-btn">Read More</button></p>
+    </div>
+</section>
+
+<!-- 
+---------------------------------------------------------------
+3. In previous assignment you have created a tabular data
+using javascript. Let’s modify that. Create a form which
+takes student’s details and show each student detail in
+table. Each row of table must contain a delete button and
+an edit button. On click on delete button entire row should
+be deleted. On click on edit button, a hidden form will
+appear with the values of that row. -->
+
+<a href="chapter-49-52(2).html" style="background-color:tomato; color:white;font-size: 30px">Click to see question 3</a>
+
+
+
+    <script src="chapter-49-52.js"></script>
+</body>
+</html>

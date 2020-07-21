@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body
+        {
+            font-family: "lato";
+        }
+        .form-container
+        {
+            background-color: tomato;
+            color:white;
+            width: 50%;
+            margin: 0 auto;
+            font-size: 20px;
+            padding: 40px;
+            margin-top: 35px;
+            border-radius: 5px;
+
+        }
+        label
+        {
+            display: block;
+            padding: 10px 0;
+        }
+        input
+        {
+            width: 95%;
+            font-size: 20px;
+            padding: 10px 20px 10px 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #submit-btn
+        {
+            width: 99.5%;
+            padding: 10px 20px 10px 20px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: teal;
+            border: none;
+            color:white;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+
+        #submit-btn:hover
+        {
+            background-color: rgb(20, 187, 187);
+        }
+        #display-data
+        {
+            text-align: center;
+            font-size: 1.7rem;
+            display: none;
+        }
+        .blogpost-img
+        {
+            width: 100%;
+            height: 250px;
+        }
+
+        section div
+        {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        .readmore-btn
+        {
+            margin-top: 20px;
+        }
+
+        table
+        {
+            width: 100%;
+        }
+
+        table, td, th
+        {
+            border:1px solid teal;
+            border-collapse: collapse;
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 5px;
+        }
+
+        #delete-btn, #edit-btn
+        {
+            border: none;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        #delete-btn
+        {
+            background-color: red;
+            color:white;
+        }
+        #edit-btn
+        {
+            background-color: green;
+            color:white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+      <!-- 
+---------------------------------------------------------------
+3. In previous assignment you have created a tabular data
+using javascript. Let’s modify that. Create a form which
+takes student’s details and show each student detail in
+table. Each row of table must contain a delete button and
+an edit button. On click on delete button entire row should
+be deleted. On click on edit button, a hidden form will
+appear with the values of that row. -->
+
+
+
+
+<div class="form-container">
+    <form action="">
+       <div>
+           <label for="">First Name</label>
+           <input type="text" placeholder="Enter First Name" id="first_name" class="input-field">
+       </div>
+       <div>
+        <label for="">Last Name</label>
+        <input type="text" placeholder="Enter Last Name" id="last_name" class="input-field">
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input type="text" placeholder="Enter Your Email" id="email" class="input-field">
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter Your Password" id="password" class="input-field">
+    </div>
+    <button type="submit" id="submit-btn">Submit</button>
+</form>
+</div>
+
+
+<div id="display-data">
+    <h1>Your Details</h1>
+    <hr width="40%" >
+    <h2 id="display-name">Your Name: %name%</h2>
+    <h2 id="display-email">Email: %email%</h2>
+    <h2 id="display-password">Password: %password%</h2>
+</div>
+
+<table>
+    <tbody>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Delete/Edit</th>
+    </tr>
+
+
+  
+</tbody>
+</table>
+
+
+<script src="chapter-49-52_q3.js"></script>
+
+
+</body>
+</html>

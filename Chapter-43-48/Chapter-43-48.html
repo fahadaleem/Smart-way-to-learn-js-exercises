@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        div
+        {
+            text-align: center;
+        }
+        img{
+            height: 250px;
+            border: 1px solid grey;
+            margin: 10px;
+            padding: 20px;
+        }
+
+
+        table
+        {
+            width: 100%;
+            background-color: tomato;
+            color:white;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+
+    <a href="" onclick="alert('hello')">Click Here</a>
+<!-- 
+    2. Display some Mobile images in browser. On click on an
+    image Show the message in alert to user. -->
+
+    <h1>Latest Mobile Phones</h1>
+    <div>
+        <img src="https://www.telemart.pk/uploads/product_image/product_112756_1.jpg" alt="" onclick="alert('Thanks for buy this mobile from our site')">
+        <img src="https://images.ctfassets.net/wcfotm6rrl7u/41rvZ9ozG4b31Kxcb4N333/6293c3a33f256853fc1f5f68575a7e76/Ecom-Nokia_7_2-Mobile.png" alt="" onclick="alert('Thanks for buy this mobile from our site')">
+        <img src="https://i.pinimg.com/originals/e4/d7/2a/e4d72aa8e1b7ddbef89e944f0a879168.jpg" alt="" onclick="alert('Thanks for buy this mobile from our site')">
+        <img src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/realme_5_pro_vs_realme_5_660_082619093113.jpg" alt="" onclick="alert('Thanks for buy this mobile from our site')">
+    </div>
+
+<!-- 
+    3. Display 10 student records in table and each row should contain a delete
+    button. If you click on a button to delete a record, entire row should be
+    deleted. -->
+
+
+    <table>
+        <tr id="1">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th id="here">Delete</th>
+    </tr>
+
+        <tr id="one">
+            <td>1</td>
+            <td>Mark</td>
+            <td>3</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="two">
+            <td>2</td>
+            <td>John</td>
+            <td>5</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="three">
+            <td>3</td>
+            <td>Alex</td>
+            <td>8</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="four">
+            <td>4</td>
+            <td>Doe</td>
+            <td>3</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="Five">
+            <td>5</td>
+            <td>Zara</td>
+            <td>9</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="Six">
+            <td>6</td>
+            <td>Johnny</td>
+            <td>3</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="seven">
+            <td>7</td>
+            <td>Avira</td>
+            <td>3</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="Eight">
+            <td>8</td>
+            <td>Mark John</td>
+            <td>3</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="nine">
+            <td>9</td>
+            <td>Alex John</td>
+            <td>5</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr id="ten">
+            <td>10</td>
+            <td>John Doe</td>
+            <td>3</td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+    </table>
+
+<!-- 
+    4. Display an image in browser. Change the picture on mouseover and set the
+    first picture on mouseout. -->
+
+    <h1>Hover Effect</h1>
+    <div>
+        <img src="https://i.pinimg.com/originals/91/b5/cd/91b5cdab51e207263169904b227503b4.jpg" alt="" onmouseover="this.src='https://wallpapercave.com/wp/kjh8eTP.jpg'" onmouseout="this.src='https://i.pinimg.com/originals/91/b5/cd/91b5cdab51e207263169904b227503b4.jpg'">
+    </div>
+
+<!-- 
+    5. Show a counter in browser. Counter should increase on click on increase
+button and decrease on click on decrease button. And show updated counter
+value in browser. -->
+
+    <h1>Counter : <label for="" id="counter-value">0</label></h1>
+    <button id="increase">Increase</button>
+    <button id="decrease">decrease</button>
+
+
+    <script src="chapter-43-48.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat";
+            font-weight: 500;
+        }
+
+        #image-container
+        {
+            text-align: center;
+        }
+        img{
+            height: 200px;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .modal-section
+        {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:0;
+            left: 0;
+            text-align: center;
+            overflow: hidden;
+            display: none;
+            
+        }
+        .modal
+        {
+            background-color: white;
+            width: 60%;
+            margin: 0 auto;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #modal-header, #modal-footer
+        {
+            padding: 20px;
+            background-color: teal;
+            color: white;
+        }
+
+     
+
+        #modal-img
+        {
+            width: 60%;
+            margin: 20px;
+        }
+
+        #close-btn
+        {
+            font-size: 28px;
+            float: right;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: -8px;
+        }
+
+        .modal-open
+        {
+            display: block;
+        }
+
+        .modal-close
+        {
+            display: none;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+
+<div id="image-container">
+
+<!---------Images appears here-->
+
+
+</div>
+<!-- model -->
+<div class="modal-section">
+    <div class="modal">
+            <h1 id="modal-header"><label id="header-text">%header%</label> <button id="close-btn">X</button></h1>
+            <hr>
+            <img src="images/1.jpg" alt="" id="modal-img">
+            <hr>
+            <h2 id="modal-footer">%footer%</h2>
+</div>
+</div>
+
+<script src="chapter-52-57.js"></script>
+
+</body>
+</html>
